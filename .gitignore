@@ -1,0 +1,49 @@
+# Игнорируем файлы и папки, которые обычно не нужны в репозитории
+
+# Папка с виртуальным окружением
+venv/
+env/
+*.venv
+
+# Папки и файлы, генерируемые PyCharm
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Папка с кешем Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Логи и временные файлы
+*.log
+*.tmp
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+
+# Конфигурационные файлы
+*.sqlite3
+*.db
+*.env
+*.venv
+
+# Файлы настройки и среды разработки
+*.coverage
+*.tox
+*.nox
+*.hypothesis
+.coverage.*
+*.mypy_cache/
+.dmypy.json
+*.dmypy.json
+.pytest_cache/
+nose2-report.xml
+nosetests.xml
+coverage.xml
+
+# Секретные файлы
+*.secret
