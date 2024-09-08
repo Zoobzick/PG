@@ -6,8 +6,8 @@ from django.shortcuts import redirect
 from django.urls import reverse
 from django.views.generic import TemplateView, ListView, DetailView
 from .models import Project
-
 from .forms import ContactForm
+
 
 
 
@@ -67,10 +67,9 @@ class ContactsPageView(TemplateView):
 
         return redirect(reverse('mainapp:mainapp_contacts'))
 
-
+      
 class ProjectDetailView(DetailView):
     model = Project
     template_name = 'mainapp/project-detail.html'
     context_object_name = 'project'
-
 

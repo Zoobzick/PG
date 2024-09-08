@@ -3,6 +3,7 @@ from mainapp import views
 from mainapp.apps import MainappConfig
 
 # app_name = MainappConfig.name
+
 from mainapp.views import ProjectDetailView
 
 app_name = 'mainapp'
