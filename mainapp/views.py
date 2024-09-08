@@ -4,7 +4,8 @@ from django.contrib import messages
 from django.core.mail import send_mail
 from django.shortcuts import redirect
 from django.urls import reverse
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, ListView, DetailView
+from .models import Project
 
 from .forms import ContactForm
 
@@ -16,6 +17,18 @@ class MainPageView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["title"] = "Главная"
+        return context
+
+
+class ProjectPageView(ListView):
+    template_name = 'mainapp/projects.html'
+    model = Project
+    context_object_name = 'projects'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['title'] = 'Проекты'
+        # print(Project.objects.get(category=))
         return context
 
 
@@ -53,3 +66,11 @@ class ContactsPageView(TemplateView):
             return redirect(reverse('mainapp:mainapp_contacts'))
 
         return redirect(reverse('mainapp:mainapp_contacts'))
+
+
+class ProjectDetailView(DetailView):
+    model = Project
+    template_name = 'mainapp/project-detail.html'
+    context_object_name = 'project'
+
+
