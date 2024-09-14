@@ -4,7 +4,10 @@ from django.contrib import messages
 from django.core.mail import send_mail
 from django.shortcuts import redirect
 from django.urls import reverse
+from django.views.defaults import page_not_found
 from django.views.generic import TemplateView, ListView, DetailView
+
+from config.settings import DEBUG
 from .models import Project
 from .forms import ContactForm
 
@@ -72,4 +75,10 @@ class ProjectDetailView(DetailView):
     model = Project
     template_name = 'mainapp/project-detail.html'
     context_object_name = 'project'
+
+
+def handler404(request, *args, **kwargs):
+    if DEBUG:
+        return page_not_found()
+    return redirect("authapp:main")
 

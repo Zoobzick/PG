@@ -1,3 +1,5 @@
+from django.conf import settings
+from django.conf.urls.static import static
 from django.urls import path
 from mainapp import views
 from mainapp.apps import MainappConfig
@@ -18,3 +20,5 @@ urlpatterns = [
     path("project/<int:pk>", ProjectDetailView.as_view(),
          name="mainapp_project-detail")
 ]
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
