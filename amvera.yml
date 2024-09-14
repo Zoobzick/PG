@@ -6,6 +6,19 @@ meta:
 build:
   requirementsPath: requirements.txt
 run:
-  command: gunicorn config.wsgi:application --bind 0.0.0.0:80
+  command: gunicorn config.wsgi:application --bind 0.0.0.0:80 && ls -al
   persistenceMount: /data
   containerPort: "80"
+
+nginx:
+  config:
+    http:
+      server:
+        listen: 80
+        server_name: pg-project-troover.amvera.io
+        location /:
+          proxy_pass: http://127.0.0.1:80
+        location /static/:
+          root /pg-project/static/
+        location /media/:
+          root /pg-project/media/
