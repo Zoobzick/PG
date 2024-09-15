@@ -19,7 +19,7 @@ class MainPageView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["title"] = "Главная"
+        context["title"] = "Профгрупп"
         return context
 
 
@@ -31,7 +31,6 @@ class ProjectPageView(ListView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['title'] = 'Проекты'
-        # print(Project.objects.get(category=))
         return context
 
 
