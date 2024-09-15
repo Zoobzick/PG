@@ -33,7 +33,7 @@ SECRET_KEY = 'django-insecure-7s7%3zp*8i^h_ddw%8g@1bm&gn=d)_)qnti$t_q8r=ew%wv-d)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*', 'pg-project-troover.amvera.io', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['*', 'cl78435.tw1.ru', '127.0.0.1', 'localhost']
 
 # Application definition
 
