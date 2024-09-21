@@ -20,9 +20,9 @@ MEDIA_ROOT = '/var/www/profgroup/media/'
 
 MEDIA_URL = '/media/'
 
-STATIC_URL = '/var/www/profgroup/static/static/'
+STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = '/var/www/profgroup/static/static/'
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
