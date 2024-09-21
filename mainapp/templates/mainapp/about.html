@@ -1,0 +1,217 @@
+{% extends "mainapp/includes/base.html" %}
+{% load static %}
+{% block content %}
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/breadcrumbs-bg.jpg');">
+      <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+
+        <h2>О нас</h2>
+        <ol>
+          <li><a href="{% url 'mainapp:mainapp_view' %}">Главная</a></li>
+          <li>О нас</li>
+        </ol>
+
+      </div>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row position-relative">
+
+          <div class="col-lg-7 about-img"
+            style="background-image: {% static 'assets/img/architect-making-plan-with-loupe.jpg' %}">
+          </div>
+
+          <div class="col-lg-7">
+            <h4>
+
+            </h4>
+            <div class="our-story">
+
+              <h3>О нас</h3>
+              <p style="text-align: justify;">Компания ООО "ПрофГрупп" начала деятельность в 2008 году, за время работы
+                мы сформировали небольшую, но профессиональную команду единомышленников, способных решать любые
+                поставленные задачи.
+                С 2008 года реализовано более 50 объектов, сложность объектов возросла от небольших
+                холодных складов - до полноценных cпортивных комплексов и производственных зданий. За данный период
+                спроектировано более 1 500 000 кв.м объектов, накоплен огромный ​​опыт проектирования различных
+                промышленных и гражданских объектов.</p>
+              <ul>
+                <li><i class="bi bi-check-circle"></i> <span>Промышленные объекты</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Логистические комплексы</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Складские комплексы</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Гражданские объекты</span></li>
+              </ul>
+              <p>Наша Миссия - ​​​Проектировать промышленные объекты мирового уровня для будущего России</p>
+
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- ======= Stats Counter Section ======= -->
+    <section id="stats-counter" class="stats-counter section-bg">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-calendar color-blue flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="16" data-purecounter-duration="1"
+                  class="purecounter"></span>
+                <p>лет работы</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-buildings color-orange flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="1500000" data-purecounter-duration="1"
+                  class="purecounter"></span>
+                <p>кв.м спроектировано</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-buildings-fill color-green flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="1000000" data-purecounter-duration="1"
+                  class="purecounter"></span>
+                <p>кв.м построено</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-buildings-fill color-green flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="70" data-purecounter-duration="1"
+                  class="purecounter"></span>
+                <p>объектов реализовано</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+
+        </div>
+
+      </div>
+    </section><!-- End Stats Counter Section -->
+
+    <!-- ======= Alt Services Section ======= -->
+    <section id="alt-services" class="alt-services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row justify-content-around gy-4">
+          <div class="col-lg-6 img-bg"
+            style="background-image: {% static 'assets/img/close-up-construction-engineer-holding-plans-hands.jpg' %};"
+            data-aos="zoom-in" data-aos-delay="100"></div>
+
+          <div class="col-lg-5 d-flex flex-column justify-content-center">
+            <h3>Мы работаем и как генпроектировщики и как субподрядчики</h3>
+            <p style="text-align: justify;">Используя наш опыт, мы готовы проработать любые стадии
+              проектирования
+              (от концепций развития территорий, до рабочей документации). Зачастую, к нам обращаются для разработки
+              рабочей документации, проанализировав стадию "Проект" мы предлагаем решения по уменьщению капитальных
+              затрат (с корректировкой и прохождением повторной экспертизы).
+              Мы работаем и как генпроектировщики и как субподрядчики.</p>
+
+            <div>
+              <li><i class="bi bi-check-circle"></i> <span>Раздел 1 "Пояснительная записка"</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Раздел 2 "Схема планировочной организации земельного
+                  участка"</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Раздел 3 "Объемно-планировочные и архитектурные
+                  решения"</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Раздел 4 "Конструктивные решения"</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Раздел 5 "Сведения об инженерном оборудовании, о сетях и
+                  системах инженерно-технического обеспечения"; </span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Раздел 6 "Технологические решения"</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Раздел 7 "Проект организации строительства"</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Раздел 11 "Мероприятия по обеспечению доступа инвалидов к
+                  объекту капитального строительства</span></li>
+            </div>
+          </div><!-- End Icon Box -->
+
+
+        </div>
+      </div><!-- End Icon Box -->
+
+
+      </div>
+      </div>
+
+      </div>
+    </section><!-- End Alt Services Section -->
+
+    <!-- ======= Alt Services Section 2 ======= -->
+    <section id="alt-services-2" class="alt-services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row justify-content-around gy-4">
+          <div class="col-lg-5 d-flex flex-column justify-content-center">
+            <h3>Наши преимущества:</h3>
+            <p style="text-align: justify;">Гарантируем реализацию проекта любой сложности в соответствии со всеми
+              строительными нормами и требованиями заказчика
+            </p>
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
+              <i class="bi bi-forward flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Эффективность</a></h4>
+                <p>
+                  Минимизация металлоемкости и материалоемкости конструкций. Минимизация стоимости земляных работ</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-forward flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Опыт</a></h4>
+                <p>
+                  Наличие высококвалифицированных специалистов и большой опыт успешной работы позволяют предлагать
+                  клиентам наиболее подходящие для каждого конкретного объекта решения, обеспечивая тем самым
+                  безупречное качество услуг и оптимальные сроки.e</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-forward flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Качество</a></h4>
+                <p>
+                  Мы проектируем лучшие объекты, которые получают сертификат соответсвия экологическим стандартам BREEAM
+                  (оценка "Very good"), являются победителями CRE Moscow Awards</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+
+          </div>
+
+          <div class="col-lg-6 img-bg" style="background-image: {% static 'assets/img/construction-silhouette.jpg' %});"
+            data-aos="zoom-in" data-aos-delay="100"></div>
+        </div>
+
+      </div>
+    </section><!-- End Alt Services Section 2 -->
+
+
+
+  </main><!-- End #main -->
+{% endblock %}

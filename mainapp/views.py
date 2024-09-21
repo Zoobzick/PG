@@ -77,6 +77,14 @@ class ProjectDetailView(DetailView):
     context_object_name = 'project'
 
 
+class AboutView(TemplateView):
+    template_name = 'mainapp/about.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['title'] = 'О нас'
+        return context
+
 def handler404(request, *args, **kwargs):
     if DEBUG:
         return page_not_found()

@@ -18,7 +18,9 @@ urlpatterns = [
     path("projects/", views.ProjectPageView.as_view(),
          name="mainapp_projects"),
     path("project/<int:pk>", ProjectDetailView.as_view(),
-         name="mainapp_project-detail")
+         name="mainapp_project-detail"),
+    path("about/", views.AboutView.as_view(),
+         name="mainapp_about"),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
