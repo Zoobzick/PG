@@ -31,6 +31,7 @@ class ProjectPageView(ListView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['title'] = 'Проекты'
+        context['categories'] = Project.CATEGORY_CHOICES
         return context
 
 
@@ -41,7 +42,7 @@ class ContactsPageView(TemplateView):
         context = super().get_context_data(**kwargs)
         context["title"] = "Контакты"
         context["form"] = ContactForm()
-        print(reverse('mainapp:mainapp_view'))
+
         return context
 
     def post(self, request, *args, **kwargs):

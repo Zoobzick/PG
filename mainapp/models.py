@@ -25,7 +25,10 @@ class Project(models.Model):
                               blank=False,
                               verbose_name='Заказчик')
 
-    category = models.CharField(max_length=50, choices=CATEGORY_CHOICES, default='industry')
+    category = models.CharField(max_length=50,
+                                choices=CATEGORY_CHOICES,
+                                default='industry',
+                                verbose_name='Категория')
 
     date = models.DateField(
         verbose_name="Дата проекта")
