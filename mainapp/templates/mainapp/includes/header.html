@@ -16,7 +16,7 @@
             {% if title == "Главная" %}
                  class = "active"
             {% endif %}>Главная</a></li>
-          <li><a href="#"
+          <li><a href="{% url 'mainapp:mainapp_about' %}"
                   {% if title == "О нас" %}
                  class="active"
                   {% endif %}>О нас</a>
