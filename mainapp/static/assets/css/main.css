@@ -968,7 +968,7 @@ section {
   line-height: 0;
 }
 
-.projects .portfolio-content:hover .portfolio-info {
+.projects .portfolio-content .portfolio-info {
   opacity: 1;
 }
 
