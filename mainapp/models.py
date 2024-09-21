@@ -6,24 +6,26 @@ from django.db import models
 
 class Project(models.Model):
     CATEGORY_CHOICES = [
-        ('reconstruction', 'Реконструкция'),
-        ('general-design', 'Генпроектирование'),
-        ('p-stage', 'Стадия "П"'),
-        ('r-stage', 'Стадия "Р"')]
+        ('industry', 'Промышленность'),
+        ('logistics', 'Логистика'),
+        ('warehouses', 'Склады'),
+        ('public-objects', 'Общественные объекты'),
+        ('other', 'Другие')]
 
     name = models.CharField(max_length=256,
                             verbose_name="Наименование проекта")
 
     title = models.CharField(max_length=256,
                              null=False,
-                             blank=False)
+                             blank=False,
+                             verbose_name="Заголовок")
 
     client = models.CharField(max_length=256,
                               null=True,
                               blank=False,
                               verbose_name='Заказчик')
 
-    category = models.CharField(max_length=50, choices=CATEGORY_CHOICES, default='reconstruction')
+    category = models.CharField(max_length=50, choices=CATEGORY_CHOICES, default='industry')
 
     date = models.DateField(
         verbose_name="Дата проекта")
