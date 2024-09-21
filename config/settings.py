@@ -20,7 +20,7 @@ MEDIA_ROOT = '/var/www/profgroup/media/'
 
 MEDIA_URL = '/media/'
 
-STATIC_URL = '/static/'
+STATIC_URL = '/var/www/profgroup/static/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
