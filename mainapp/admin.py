@@ -7,7 +7,7 @@ from mainapp.models import Project, ProjectImage
 class ProjectImageInline(admin.TabularInline):
     model = ProjectImage
     extra = 1
-    fields = ['image']
+    fields = ['image', 'hero_carousel']
     can_delete = True
 
 

@@ -58,7 +58,7 @@ class ProjectImage(models.Model):
 
     image = models.ImageField(upload_to='projects/images/')
 
-    hero_carusel = models.BooleanField(default=False,
+    hero_carousel = models.BooleanField(default=False,
                                        verbose_name="Карусель главной страницы")
 
     def convert_to_webp(self, uploaded_image):
