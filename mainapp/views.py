@@ -76,6 +76,11 @@ class ProjectDetailView(DetailView):
     template_name = 'mainapp/project-detail.html'
     context_object_name = 'project'
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["title"] = self.object.title
+        return context
+
 
 class AboutView(TemplateView):
     template_name = 'mainapp/about.html'
