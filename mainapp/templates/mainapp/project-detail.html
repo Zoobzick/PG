@@ -80,7 +80,7 @@
               <ul>
                 <li><strong>Категория</strong> <span>{{ project.get_category_display }}</span></li>
                 <li><strong>Заказчик</strong> <span>{{ project.client }}</span></li>
-                <li><strong>Год</strong> <span>{{ project.date }}</span></li>
+                <li><strong>Год</strong> <span>{{ project.date|date:"Y" }}</span></li>
                 <li><strong>Площадь</strong> <span>{{ project.area }} м²</span></li>
               </ul>
             </div>
