@@ -288,6 +288,7 @@
 }
 
 .gslide-description {
+  display: none !important;
   position: relative;
   -webkit-box-flex: 1;
   -ms-flex: 1 0 100%;

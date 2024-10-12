@@ -26,7 +26,7 @@ class Project(models.Model):
 
     client = models.CharField(max_length=256,
                               null=True,
-                              blank=False,
+                              blank=True,
                               verbose_name='Заказчик')
 
     category = models.CharField(max_length=50,
